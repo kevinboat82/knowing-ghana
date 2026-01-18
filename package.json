@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server/index.js",
-    "heroku-postbuild": "npm install && npm run build && cd server && npm install && npx prisma generate"
+    "heroku-postbuild": "npm install && npm run build && cd server && npm install && npx prisma generate && npx prisma db push"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
